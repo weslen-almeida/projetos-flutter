@@ -1,3 +1,5 @@
+import 'package:asyncstate/asyncstate.dart';
+import 'package:dw_barbershop/src/core/ui/widgets/barbershop_loader.dart';
 import 'package:dw_barbershop/src/features/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -7,11 +9,17 @@ class BarbershopApp extends StatelessWidget {
 
    @override
    Widget build(BuildContext context) {
-       return MaterialApp(
+    return AsyncStateBuilder(
+      customLoader: const BarbershopLoader(),
+      builder: (AsyncNavigatorObserver){
+      return MaterialApp(
         title: 'DW Barbershop',
+        navigatorObservers: [AsyncNavigatorObserver],
         routes: {
           '/': (_) => SplashPage()
         },
        );
+     },
+    );
   }
 }
