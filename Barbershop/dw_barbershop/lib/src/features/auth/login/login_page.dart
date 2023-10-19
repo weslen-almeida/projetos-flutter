@@ -1,3 +1,4 @@
+import 'package:dw_barbershop/src/core/ui/constants.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -30,10 +31,53 @@ class LoginPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/imgLogo.png'),
+                        const SizedBox(
+                          height: 24,
+                        ),
                         TextFormField(
-                          decoration:
-                              const InputDecoration(label: Text('Email')),
-                        )
+                          decoration: const InputDecoration(
+                            label: Text('E-mail'),
+                            hintText: 'E-mail',
+                            floatingLabelBehavior: FloatingLabelBehavior.never,
+                            labelStyle: TextStyle(color: Colors.black),
+                            hintStyle: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            label: Text('Senha'),
+                            hintText: 'Senha',
+                            floatingLabelBehavior: FloatingLabelBehavior.never,
+                            labelStyle: TextStyle(color: Colors.black),
+                            hintStyle: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        const Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Esqueceu a senha',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: ColorsConstants.brow,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(56),
+                          ),
+                          onPressed: () {},
+                          child: const Text('ACESSAR'),
+                        ),
                       ],
                     ),
                     const Align(
