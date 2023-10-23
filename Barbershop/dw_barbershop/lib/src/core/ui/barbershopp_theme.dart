@@ -13,7 +13,7 @@ sealed class BarbershoppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
-        labelStyle: TextStyle(color: ColorsConstants.grey),
+        labelStyle: const TextStyle(color: ColorsConstants.grey),
         border: _defaultInputBorder,
         enabledBorder: _defaultInputBorder,
         focusedBorder: _defaultInputBorder,
