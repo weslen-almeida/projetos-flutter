@@ -78,7 +78,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                             height: 24,
                           ),
                           TextFormField(
-                            onTapOutside: (_) => context.unfocus(),
+                            onTapOutside: (_) => unfocus(context),
                             validator: Validatorless.multiple([
                               Validatorless.required('E-mail obrigatório'),
                               Validatorless.email('E-mail inválido')
@@ -97,7 +97,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                             height: 24,
                           ),
                           TextFormField(
-                            onTapOutside: (_) => context.unfocus(),
+                            onTapOutside: (_) => unfocus(context),
                             validator: Validatorless.multiple([
                               Validatorless.required('Senha obrigatória'),
                               Validatorless.min(6,
