@@ -41,8 +41,12 @@ class _LoginPageState extends ConsumerState<LoginPage> {
           Messages.showError('Erro ao realizar o login', context);
           break;
         case LoginState(status: LoginStateStatus.admLogin):
+          Navigator.of(context)
+              .pushNamedAndRemoveUntil('/home/adm', (route) => false);
           break;
         case LoginState(status: LoginStateStatus.employeeLogin):
+          Navigator.of(context)
+              .pushNamedAndRemoveUntil('/home/employee', (route) => false);
           break;
       }
     });
@@ -78,7 +82,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                             height: 24,
                           ),
                           TextFormField(
-                            onTapOutside: (_) => unfocus(context),
+                            onTapOutside: (_) => context.unfocus(),
                             validator: Validatorless.multiple([
                               Validatorless.required('E-mail obrigatório'),
                               Validatorless.email('E-mail inválido')
@@ -97,7 +101,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                             height: 24,
                           ),
                           TextFormField(
-                            onTapOutside: (_) => unfocus(context),
+                            onTapOutside: (_) => context.unfocus(),
                             validator: Validatorless.multiple([
                               Validatorless.required('Senha obrigatória'),
                               Validatorless.min(6,
