@@ -33,8 +33,12 @@ class _UserRegisterPageState extends ConsumerState<UserRegisterPage> {
     ref.listen(userRegisterVmProvider, (_, state) {
       switch (state) {
         case UserRegisterStateStatus.initial:
+          break;
         case UserRegisterStateStatus.success:
+          Navigator.of(context).pushNamed('/auth/register/barbershop');
         case UserRegisterStateStatus.error:
+          Messages.showError(
+              'Erro ao registrar usuário administrador', context);
       }
     });
 
