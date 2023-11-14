@@ -8,9 +8,9 @@ class CardResume extends StatelessWidget {
     return const Center(
       child: Card(
         child: SizedBox(
-          width: 300,
+          width: 350,
           height: 100,
-          child: Center(child: Text('Elevated Card')),
+          child: Center(child: Text('Resumo')),
         ),
       ),
     );
