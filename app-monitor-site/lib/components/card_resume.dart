@@ -10,7 +10,19 @@ class CardResume extends StatelessWidget {
         child: SizedBox(
           width: 350,
           height: 100,
-          child: Center(child: Text('Resumo')),
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Row(
+              children: [
+                Column(
+                  children: [Text('Resumo')],
+                ),
+                Text('Total de Sites'),
+                Text('No ar'),
+                Text('Fora do ar'),
+              ],
+            ),
+          ),
         ),
       ),
     );
