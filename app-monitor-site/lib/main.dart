@@ -1,3 +1,4 @@
+import 'package:app_monitor_site/pages/details.dart';
 import 'package:app_monitor_site/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -17,10 +18,13 @@ class MainApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Monioramento de Sites'),
+          title: const Text('Monitoramento de Sites'),
         ),
         body: const Home(),
       ),
+      routes: {
+        '/details': (context) => const Details(),
+      },
     );
   }
 }

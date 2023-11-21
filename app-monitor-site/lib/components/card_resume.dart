@@ -12,14 +12,27 @@ class CardResume extends StatelessWidget {
           height: 100,
           child: Padding(
             padding: EdgeInsets.all(10.0),
-            child: Row(
+            child: Column(
               children: [
-                Column(
-                  children: [Text('Resumo')],
+                Text('Resumo'),
+                Row(
+                  textDirection: TextDirection.ltr,
+                  children: [
+                    Text('Total de Sites'),
+                  ],
                 ),
-                Text('Total de Sites'),
-                Text('No ar'),
-                Text('Fora do ar'),
+                Row(
+                  textDirection: TextDirection.ltr,
+                  children: [
+                    Text('No ar'),
+                  ],
+                ),
+                Row(
+                  textDirection: TextDirection.ltr,
+                  children: [
+                    Text('Fora do ar'),
+                  ],
+                ),
               ],
             ),
           ),

@@ -1,3 +1,4 @@
+import 'package:app_monitor_site/pages/details.dart';
 import 'package:flutter/material.dart';
 
 class CardSites extends StatelessWidget {
@@ -12,35 +13,95 @@ class CardSites extends StatelessWidget {
       mainAxisSpacing: 10,
       crossAxisCount: 3,
       children: <Widget>[
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
-          child: const Text("Site 01"),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[100],
+            child: const Text("Site 01"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[200],
-          child: const Text('Site 02'),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[200],
+            child: const Text("Site 02"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[300],
-          child: const Text('Site 03'),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[300],
+            child: const Text("Site 03"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[400],
-          child: const Text('Site 04'),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[400],
+            child: const Text("Site 04"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[500],
-          child: const Text('Site 05'),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[500],
+            child: const Text("Site 05"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[600],
-          child: const Text('Site 06'),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            color: Colors.teal[600],
+            child: const Text("Site 06"),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Details(),
+              ),
+            );
+          },
         ),
       ],
     );
