@@ -23,7 +23,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 01', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },
@@ -38,7 +39,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 02', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },
@@ -53,7 +55,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 03', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },
@@ -68,7 +71,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 04', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },
@@ -83,7 +87,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 05', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },
@@ -98,7 +103,8 @@ class CardSites extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const Details(),
+                builder: (context) => const Details(
+                    name: 'Site 06', status: 'No ar', created: '01/01/2023'),
               ),
             );
           },

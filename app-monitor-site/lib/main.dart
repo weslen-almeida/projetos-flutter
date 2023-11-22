@@ -23,7 +23,11 @@ class MainApp extends StatelessWidget {
         body: const Home(),
       ),
       routes: {
-        '/details': (context) => const Details(),
+        '/details': (context) => const Details(
+              name: '',
+              status: '',
+              created: '',
+            ),
       },
     );
   }
