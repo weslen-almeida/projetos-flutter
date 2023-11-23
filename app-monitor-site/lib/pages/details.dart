@@ -4,12 +4,14 @@ class Details extends StatefulWidget {
   final String name;
   final String status;
   final String created;
+  final String url;
 
   const Details({
     super.key,
     required this.name,
     required this.status,
     required this.created,
+    required this.url,
   });
 
   @override
@@ -30,19 +32,79 @@ class _DetailsState extends State<Details> {
           },
         ),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Text(widget.name),
-            Text(widget.status),
-            Text(widget.created),
-            ElevatedButton(
-              onPressed: () {
-                print('teste de clique');
-              },
-              child: Text('Ir para o site'),
-            ),
-          ],
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Center(
+          child: Column(
+            children: [
+              const FlutterLogo(
+                size: 50,
+              ),
+              const SizedBox(height: 20),
+              Text.rich(
+                TextSpan(
+                  children: <TextSpan>[
+                    const TextSpan(
+                      text: 'Empresa: ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(text: widget.name),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 5),
+              Text.rich(
+                TextSpan(
+                  children: <TextSpan>[
+                    const TextSpan(
+                      text: 'Status: ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(text: widget.status),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 5),
+              Text.rich(
+                TextSpan(
+                  children: <TextSpan>[
+                    const TextSpan(
+                      text: 'Publicado em: ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(text: widget.created),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 5),
+              Text.rich(
+                TextSpan(
+                  children: <TextSpan>[
+                    const TextSpan(
+                      text: 'Url: ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(text: widget.url),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 30),
+              ElevatedButton(
+                onPressed: () {
+                  print('teste de clique');
+                },
+                child: const Text('Ir para o site'),
+              ),
+            ],
+          ),
         ),
       ),
     );

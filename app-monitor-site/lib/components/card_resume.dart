@@ -18,7 +18,11 @@ class CardResume extends StatelessWidget {
                 Row(
                   textDirection: TextDirection.ltr,
                   children: [
-                    Text('Total de Sites'),
+                    Column(
+                      children: [
+                        Text('Total de Sites'),
+                      ],
+                    ),
                   ],
                 ),
                 Row(

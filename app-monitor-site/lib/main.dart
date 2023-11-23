@@ -27,6 +27,7 @@ class MainApp extends StatelessWidget {
               name: '',
               status: '',
               created: '',
+              url: '',
             ),
       },
     );

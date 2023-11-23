@@ -24,7 +24,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 01', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 01',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
@@ -40,7 +44,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 02', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 02',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
@@ -56,7 +64,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 03', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 03',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
@@ -72,7 +84,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 04', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 04',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
@@ -88,7 +104,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 05', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 05',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
@@ -104,7 +124,11 @@ class CardSites extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                    name: 'Site 06', status: 'No ar', created: '01/01/2023'),
+                  name: 'Site 06',
+                  status: 'No ar',
+                  created: '01/01/2023',
+                  url: 'https://www.web-cms.construp.com.br',
+                ),
               ),
             );
           },
