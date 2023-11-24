@@ -28,6 +28,7 @@ class MainApp extends StatelessWidget {
               status: '',
               created: '',
               url: '',
+              logo: ''
             ),
       },
     );

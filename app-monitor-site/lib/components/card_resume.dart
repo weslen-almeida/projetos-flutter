@@ -8,33 +8,35 @@ class CardResume extends StatelessWidget {
     return const Center(
       child: Card(
         child: SizedBox(
-          width: 350,
-          height: 100,
           child: Padding(
             padding: EdgeInsets.all(10.0),
             child: Column(
               children: [
                 Text('Resumo'),
-                Row(
-                  textDirection: TextDirection.ltr,
+                Row(mainAxisAlignment :MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      children: [
-                        Text('Total de Sites'),
-                      ],
+                    Expanded(
+                      flex: 2,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Total de Sites'),
+                          Text('No ar'),
+                          Text('Fora do ar'),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                Row(
-                  textDirection: TextDirection.ltr,
-                  children: [
-                    Text('No ar'),
-                  ],
-                ),
-                Row(
-                  textDirection: TextDirection.ltr,
-                  children: [
-                    Text('Fora do ar'),
+                    Expanded(
+                      flex: 3,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('6'),
+                          Text('4'),
+                          Text('2')
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ],
