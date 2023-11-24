@@ -17,14 +17,24 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[100],
-            child: const Text("Site 01"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text("Web Construp"),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 01',
+                  name: 'Web Construp',
                   status: 'No ar',
                   created: '01/01/2023',
                   url: 'https://www.web-cms.construp.com.br',
@@ -37,17 +47,30 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[200],
-            child: const Text("Site 02"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Alfix Parafusos",
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 02',
+                  name: 'Alfix Parafusos',
                   status: 'No ar',
-                  created: '01/01/2023',
-                  url: 'https://www.web-cms.construp.com.br',
+                  created: '10/01/2023',
+                  url: 'https://www.alfixparafusos.com.br',
                 ),
               ),
             );
@@ -57,17 +80,30 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[300],
-            child: const Text("Site 03"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Google",
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 03',
+                  name: 'Google',
                   status: 'No ar',
-                  created: '01/01/2023',
-                  url: 'https://www.web-cms.construp.com.br',
+                  created: '01/01/2000',
+                  url: 'https://www.google.com',
                 ),
               ),
             );
@@ -77,17 +113,30 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[400],
-            child: const Text("Site 04"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Construp",
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 04',
+                  name: 'Construp',
                   status: 'No ar',
-                  created: '01/01/2023',
-                  url: 'https://www.web-cms.construp.com.br',
+                  created: '10/05/2020',
+                  url: 'https://www.construp.com.br',
                 ),
               ),
             );
@@ -97,17 +146,30 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[500],
-            child: const Text("Site 05"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Blenus",
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 05',
+                  name: 'Belenus',
                   status: 'No ar',
-                  created: '01/01/2023',
-                  url: 'https://www.web-cms.construp.com.br',
+                  created: '21/02/2000',
+                  url: 'https://www.belenus.com.br',
                 ),
               ),
             );
@@ -117,17 +179,30 @@ class CardSites extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.teal[600],
-            child: const Text("Site 06"),
+            child: const Column(
+              children: [
+                FlutterLogo(
+                  size: 25,
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Git Hub",
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 2),
+                Text("No ar"),
+              ],
+            ),
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const Details(
-                  name: 'Site 06',
+                  name: 'Git Hub',
                   status: 'No ar',
-                  created: '01/01/2023',
-                  url: 'https://www.web-cms.construp.com.br',
+                  created: '19/08/2003',
+                  url: 'https://www.github.com',
                 ),
               ),
             );

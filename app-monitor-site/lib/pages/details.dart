@@ -100,6 +100,7 @@ class _DetailsState extends State<Details> {
               ElevatedButton(
                 onPressed: () {
                   print('teste de clique');
+                  // launchUrl(Uri.parse('https://www.google.com'));
                 },
                 child: const Text('Ir para o site'),
               ),
