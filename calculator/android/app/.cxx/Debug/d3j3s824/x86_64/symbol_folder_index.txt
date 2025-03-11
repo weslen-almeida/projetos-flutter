@@ -1,0 +1,1 @@
+/home/weslen/Flutter/projetos-flutter/calculator/build/app/intermediates/cxx/Debug/d3j3s824/obj/x86_64
